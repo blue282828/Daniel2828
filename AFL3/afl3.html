@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="font sans">
+    <!-- <header> -->
+      <header>
+        <nav class="w-full p-8 bg-white flex items-center justify-between md:justify-start">
+          <div class="mr-20 font-bold text-3xl">
+            <h1>Meal Planner</h1>
+          </div>
+          <div id="menu" class="hidden md:flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8 text-lg font-semibold">
+            <ul class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8">
+              <li>Home</li>
+              <li>gallery</li>
+              <li>About</li>
+              
+
+            </ul>
+          </div>
+          <button id="burger" class="md:hidden block focus:outline-none">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="bi bi-list" viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+            </svg>
+          </button>
+        </nav>
+      </header>
+      <script>
+        const burger = document.getElementById('burger');
+        const menu = document.getElementById('menu');
+      
+        burger.addEventListener('click', () => {
+          menu.classList.toggle('hidden');
+        });
+      </script>
+<!-- </header> -->
+  </body>
+</html>
